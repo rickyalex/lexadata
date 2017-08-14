@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Lexadata | Your Business Solution</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index-grid.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="body page-index clearfix">
+  <div class="container"></div>
+  <div class="element element-1"></div>
+  <div onClick="window.location='www.lexadata.com';" class="element element-2"></div>
+  <p class="text text-1"><font color="#fefefe" face="Montserrat"><strong>CONTACT</strong></font></p>
+  <p class="text text-2"><font color="#fefefe" face="Montserrat"><strong>ABOUT</strong></font></p>
+  <p class="text text-3"><font color="#fefefe" face="Montserrat"><strong>PORTOFOLIO</strong></font></p>
+  <p class="text text-4"><strong>SERVICES</strong></p>
+  <div class="loadingDiv">
+	<img id="img" src="images/ricky_logo.png" />
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/jQueryRotate.js"></script>
+		<script>
+			var rotation = function (){
+			  $("#img").rotate({
+				angle:0,
+				animateTo:360,
+				callback: rotation
+			  });
+			}
+			rotation();
+				
+			window.onload = function(){
+				$(".loadingDiv").fadeOut( "slow" );
+			};
+		</script>
+</body>
+</html>
